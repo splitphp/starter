@@ -9,7 +9,7 @@
 
 ### What's New ###
 
-> Version: v1.5.3
+> Version: v1.5.4
 
 > Release Date: 2025-01-22
 
@@ -60,7 +60,7 @@ The **SPLIT PHP Framework** represents its API Layer as ***WebServices***, where
 ---
 
 ### Getting Started ###
-1. [Download](https://github.com/gabriel-guelfi/splitphp/archive/refs/tags/v1.5.0.zip) the framework source on the path of your application and unzip it. (the Composer solution is currently being studied)
+1. [Download](https://github.com/gabriel-guelfi/splitphp/archive/refs/tags/v1.5.4.zip) the framework source on the path of your application and unzip it. (the Composer solution is currently being studied)
 2. Run **`php console setup`**, which will generate a "/config.ini" file, with some auto-settings.
 3. Setup */config.ini* file according to your application's needs.
 4. Turn on your app running the command: **`php console server:start`**.
