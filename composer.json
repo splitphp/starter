@@ -8,6 +8,11 @@
     "composer/installers": "^1.12",
     "oomphinc/composer-installers-extender": "^2.0"
   },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"$d=__DIR__.'/vendor/splitphp'; if(is_dir($d) && count(scandir($d))===2) rmdir($d);\""
+    ]
+  },
   "extra": {
     "installer-types": [
       "splitphp-core",
