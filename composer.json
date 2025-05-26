@@ -6,7 +6,7 @@
   "require": {
     "splitphp/core": "^1.5.3",
     "composer/installers": "^1.12",
-    "oomphinc/composer-installers-extender": "^1.1"
+    "oomphinc/composer-installers-extender": "^2.0"
   },
   "extra": {
     "installer-types": [
