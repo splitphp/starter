@@ -45,11 +45,13 @@ jobs:
       - name: Assemble distribution folder
         run: |
           mkdir dist
-          # copy starter files (exclude git and workflows)
-          rsync -a --exclude='.git' --exclude='.github' ./ dist/
-          # copy core into engine/
+          # empacota starter, respeitando export-ignore
+          git -C starter archive HEAD --format=tar | tar -x -C dist/
           mkdir dist/engine
-          rsync -a --exclude='.git' --exclude='.github' core/ dist/engine/
+          # empacota core, respeitando export-ignore
+          git -C core archive HEAD --format=tar | tar -x -C dist/engine/
+          cd dist
+          zip -r ../splitphp-distribution-${{ github.event.release.tag_name }}.zip ./*
 
       # 5) Zip it up
       - name: Zip distribution
