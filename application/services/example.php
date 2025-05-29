@@ -2,7 +2,7 @@
 
 namespace application\services;
 
-use \engine\Service;
+use \SplitPHP\Service;
 
 class Example extends Service
 {
