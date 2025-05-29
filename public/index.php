@@ -26,8 +26,8 @@
 //                                                                                                                                                                //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-use \engine\System;
-use \engine\Helpers;
+use \SplitPHP\System;
+use \SplitPHP\Helpers;
 
 // Includes main class System:
 require_once __DIR__ . "/../engine/kernel/class.system.php";
