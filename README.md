@@ -23,7 +23,7 @@ This will install the `splitphp/core` engine and set up the basic directory stru
 2. Extract it:
 
    ```bash
-   unzip splitphp-distribution-<version>.zip -d myapp
+   unzip splitphp-distribution-latest.zip -d myapp
    cd myapp
    ```
 
