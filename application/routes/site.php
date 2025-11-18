@@ -1,13 +1,16 @@
 <?php
 
-namespace application\routes;
+namespace Application\Routes;
 
-use \SplitPHP\WebService;
+use SplitPHP\WebService;
 
 class Site extends WebService
 {
   public function init()
   {
+    $this->setAntiXsrfValidation(false);
+
+    // Home Page Endpoints:
     $this->setAntiXsrfValidation(false);
 
     // Home Page Endpoints:
